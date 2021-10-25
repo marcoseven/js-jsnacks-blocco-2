@@ -40,7 +40,6 @@ Stampare a schermo la bici con peso minore.
 // DOM
 // const pesoBici = document.getElementById("result");
 
-
 // 2° Live Coding
 /*
 Descrizione: 
@@ -50,30 +49,44 @@ Nome sarà l’unica proprietà da compilare, mentre le altre saranno tutte sett
 */
 
 // Array di oggetti
-const club = [
+const clubs = [
 	{
 		nome: "Inter",
-		punti_fatti: "0",
-		falli_subiti: "0",
+		punti_fatti: 0,
+		falli_subiti: 0,
 	},
 	{
 		nome: "Milan",
-		punti_fatti: "0",
-		falli_subiti: "0",
+		punti_fatti: 0,
+		falli_subiti: 0,
 	},
 	{
 		nome: "Juve",
-		punti_fatti: "0",
-		falli_subiti: "0",
+		punti_fatti: 0,
+		falli_subiti: 0,
 	},
 	{
 		nome: "Roma",
-		punti_fatti: "0",
-		falli_subiti: "0",
+		punti_fatti: 0,
+		falli_subiti: 0,
 	},
 	{
 		nome: "Lazio",
-		punti_fatti: "0",
-		falli_subiti: "0",
+		punti_fatti: 0,
+		falli_subiti: 0,
 	},
 ];
+
+/* 
+Snack 2b blocco 2
+Descrizione:
+Generare numeri random al posto degli 0 nelle proprietà:
+punti fatti e falli subiti
+*/
+
+for (let index = 0; index < clubs.length; index++) {
+	let club = clubs[index];
+	club.punti_fatti = Math.round(Math.random() * 100);
+	club.falli_subiti = Math.round(Math.random() * 100);
+	console.log(club);
+}
