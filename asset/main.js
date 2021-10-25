@@ -32,8 +32,10 @@ const bicycle = [
 	},
 ];
 
+// ciclo for in
 for (let key in bicycle) {
 	console.log(bicycle[key]);
 }
 
-
+// DOM
+const pesoBici = document.getElementById("result");
